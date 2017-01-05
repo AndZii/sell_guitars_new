@@ -3,12 +3,12 @@ Rails.application.routes.draw do
 
   get 'main/index'
   root 'main#index'    
-  get 'where-to-sell-silver-nyc-queens' => 'main#contacts', as: :contacts    
+  get 'where-to-sell-guitars-nyc-queens' => 'main#contacts', as: :contacts    
   get 'info-:second_title' => 'main#show_post', as: :show_post
   get 'about-sell-silver-nyc' => 'main#about', as: :about    
   post '/message' => 'main#message' , as: :message  
   get 'messages' => 'main#messages'
-  get 'how-do-we-buy-sylver-in-nyc' => 'main#how_it_works', as: :how_it_works    
+  get 'guitars-musical-instruments-buyer-nyc-queens' => 'main#how_it_works', as: :how_it_works    
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
