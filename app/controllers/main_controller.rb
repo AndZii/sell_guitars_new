@@ -5,7 +5,7 @@ class MainController < ApplicationController
   def create_message_obj
     @message = Message.new
     @posts = Post.all.first(5)
-    @title = "Sell Diamonds And Jewelry In NYC | Queens | Top Dollar For Your Diamonds"  
+    @title = "Sell Guitars And Musical Items In NYC | Queens | Top Dollar For Your Musical Instruments"  
   end      
     
   def contacts
