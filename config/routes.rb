@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   root 'main#index'    
   get 'where-to-sell-guitars-nyc-queens' => 'main#contacts', as: :contacts    
   get 'info-:second_title' => 'main#show_post', as: :show_post
-  get 'about-sell-silver-nyc' => 'main#about', as: :about    
+  get 'about-sell-guitars-nyc' => 'main#about', as: :about    
   post '/message' => 'main#message' , as: :message  
   get 'messages' => 'main#messages'
   get 'guitars-musical-instruments-buyer-nyc-queens' => 'main#how_it_works', as: :how_it_works    
