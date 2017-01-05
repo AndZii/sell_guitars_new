@@ -1,0 +1,44 @@
+%hr
+%footer.footer-distributed
+  .footer-left
+    %h3 
+      %span 
+        = get_content_by_name("full_website_name")
+    %p.footer-links
+      = link_to "Home", root_path
+      ·
+      = link_to "About", about_path
+      ·
+      = link_to 'Contacts', contacts_path
+    %p.footer-company-name WeBuyGoods.Com © 2016
+  .footer-center
+    %div
+      %i.fa.fa-map-marker
+      %p
+        %a{:href => "https://www.google.com/maps/dir/Current+Location/8710+Lefferts+BLVD+Richmond+Hill+NY+11418"}
+          %span Queens: 8710 Lefferts BLVD
+          Richmond Hill, NY, 11418
+    %div
+      %i.fa.fa-phone
+      %p
+        %a{:href => "tel:#{get_content_by_name("company_phone_number")}"} 
+          = get_content_by_name("company_phone_number")
+    %div
+      %i.fa.fa-envelope
+      %p
+        %a{:href => "mailto:#{get_content_by_name("company_email_address")}"} 
+          = get_content_by_name("company_email_address")
+  .footer-right
+    %p.footer-company-about
+      %span 
+        = get_content_by_name("footer_about_site")
+      = get_content_by_name("footer_about_short_description")
+    .footer-icons
+      %a{:href => "https://www.facebook.com/webuygoodsnyc"}
+        %i.fa.fa-facebook
+      %a{:href => "https://plus.google.com/106507584776418285314/about"}
+        %i.fa.fa-google-plus
+      %a{:href => "https://www.instagram.com/webuygoodsnyc/"}
+        %i.fa.fa-instagram
+      %a{:href => "https://twitter.com/webuygoodsnyc"}
+        %i.fa.fa-twitter
