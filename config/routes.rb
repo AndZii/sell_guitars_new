@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get 'main/index'
   root 'main#index'    
   get 'where-to-sell-guitars-nyc-queens' => 'main#contacts', as: :contacts    
-  get 'second_title' => 'main#show_post', as: :show_post
+  get 'info-:second_title' => 'main#show_post', as: :show_post
   get 'about-sell-guitars-nyc' => 'main#about', as: :about    
   post '/message' => 'main#message' , as: :message  
   get 'messages' => 'main#messages'

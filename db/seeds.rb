@@ -54,7 +54,7 @@ Post.create(
     #
     title: "Cash For Guitars In NYC", 
     #
-    second_title: "Top Rated Guitar Buyer of NYC. Top Dollar For Musical Instruments", 
+    second_title: "Top Rated Guitar Buyer of NYC", 
     #
     url: "Guitar Buyer Of NYC Queens",
     #
