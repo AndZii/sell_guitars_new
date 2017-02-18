@@ -42,11 +42,36 @@ body {
 }
 
 #phone-button-wrapper {
+  animation: shake 1.82s cubic-bezier(.36,.07,.19,.97) both;
+  animation-iteration-count:infinite;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+#phone-button-wrapper {
     width: 60px;
     height: 60px;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 32px;
+    right: 10px;
     background: #FF7043;
     border-radius: 100px;
     z-index: 100;
@@ -55,6 +80,19 @@ body {
     color: white !important;
 }
 
+.call-now-sign {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    padding-right: 15px;
+    background: #FF7043;
+    padding-left: 15px;
+    border-radius: 100px 0  0 0;
+    opacity: 1;
+    z-index: 100;
+    font-size: 120%;
+    color: white !important;
+}
 p.description-wrapper {
     font-size: 18px !important;
 }
